@@ -1,0 +1,43 @@
+:root {
+  --primary: #6a0dad; /* roxo primário */
+  --secondary: #ff1493; /* rosa pink secundário */
+  --tertiary: #ff7f00; /* laranja fluorescente */
+  --bg-overlay: rgba(0,0,0,0.28);
+  --font: 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{
+  font-family:var(--font);
+  color:#fff;
+  background-image: url('../assets/background.jpg'), url('../assets/background.svg'), linear-gradient(135deg,var(--primary), var(--secondary));
+  background-size:cover;
+  background-position:center;
+}
+
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:2rem;
+  background: linear-gradient(180deg, rgba(0,0,0,0.18), rgba(0,0,0,0.45));
+}
+
+.container{max-width:900px;padding:1rem}
+h1{font-size:3.2rem; margin:0 0 .5rem; color:var(--primary); letter-spacing:2px; text-shadow:0 4px 20px rgba(0,0,0,0.5)}
+.headline{font-size:1.6rem; font-weight:800; color:var(--secondary); background:rgba(255,255,255,0.06); padding:.6rem 1rem; border-radius:10px; display:inline-block}
+.subtitle{margin-top:.6rem;font-size:1.05rem;color:#fff;opacity:0.95}
+.cta{margin-top:1.2rem}
+.btn{display:inline-block;padding:.9rem 1.6rem;border-radius:999px;text-decoration:none;font-weight:800;margin:0 .5rem;color:#fff}
+.btn.primary{background:linear-gradient(90deg,var(--primary),var(--secondary));box-shadow:0 8px 30px rgba(106,13,173,0.28)}
+.btn.secondary{background:var(--tertiary); color:#000}
+.age{margin-top:1rem;font-size:.95rem;opacity:0.95}
+.footer{position:fixed;right:12px;bottom:12px;color:rgba(255,255,255,0.8);font-size:.85rem}
+
+@media (max-width:600px){
+  h1{font-size:2.4rem}
+  .headline{font-size:1.2rem}
+}
