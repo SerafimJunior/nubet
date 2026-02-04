@@ -1,40 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Usuário</title>
-    <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro de Usuário — NUBET</title>
+        <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <div class="container">
-        <h2>Cadastro</h2>
+    <main class="hero">
+        <div class="container">
+            <h1>NUBET</h1>
+            <p class="headline">Crie sua conta</p>
 
-        <form>
-            <div class="input-group">
-                <label for="nome">Nome completo</label>
-                <input type="text" id="nome" placeholder="Digite seu nome" required>
+            <div class="form-card">
+                <h2>Cadastro</h2>
+                <form class="signup">
+                    <div class="input-group">
+                        <label for="nome">Nome completo</label>
+                        <input class="input-field" type="text" id="nome" placeholder="Digite seu nome" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">E-mail</label>
+                        <input class="input-field" type="email" id="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="senha">Senha</label>
+                        <input class="input-field" type="password" id="senha" placeholder="Digite sua senha" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="confirmar">Confirmar senha</label>
+                        <input class="input-field" type="password" id="confirmar" placeholder="Confirme sua senha" required>
+                    </div>
+
+                    <button class="btn primary" type="submit">Cadastrar</button>
+                </form>
+
+                <a class="btn secondary" href="index.html" style="display:inline-block;margin-top:12px">Voltar</a>
             </div>
+        </div>
+    </main>
 
-            <div class="input-group">
-                <label for="email">E-mail</label>
-                <input type="email" id="email" placeholder="Digite seu e-mail" required>
-            </div>
-
-            <div class="input-group">
-                <label for="senha">Senha</label>
-                <input type="password" id="senha" placeholder="Digite sua senha" required>
-            </div>
-
-            <div class="input-group">
-                <label for="confirmar">Confirmar senha</label>
-                <input type="password" id="confirmar" placeholder="Confirme sua senha" required>
-            </div>
-
-            <button type="submit">Cadastrar</button>
-        </form>
-    </div>
+    <footer class="footer">© NUBET</footer>
 
 </body>
 </html>

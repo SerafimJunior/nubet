@@ -41,3 +41,12 @@ h1{font-size:3.2rem; margin:0 0 .5rem; color:var(--primary); letter-spacing:2px;
   h1{font-size:2.4rem}
   .headline{font-size:1.2rem}
 }
+
+/* Form styles for cadastro page */
+.form-card{background:rgba(255,255,255,0.04);padding:1.6rem;border-radius:12px;max-width:640px;margin:2rem auto;box-shadow:0 12px 40px rgba(0,0,0,0.6)}
+.form-card h2{color:#fff;margin-top:0;margin-bottom:0.6rem}
+.input-group{text-align:left;margin-bottom:1rem}
+.input-group label{display:block;color:rgba(255,255,255,0.9);margin-bottom:.4rem;font-weight:600}
+.input-field{width:100%;padding:.8rem;border-radius:8px;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.02);color:#fff}
+.signup .btn.primary{width:100%;display:block;padding:.95rem;margin-top:.6rem}
+.form-card .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:#fff}
